@@ -1,3 +1,25 @@
-body {
-  background-color: bisque;
+/* webpackIgnore: true */
+@import url(./basic.css);
+@import /* webpackIgnore: true */ url(./imported.css);
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato&display=swap');
+.headingSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:#D5E60D;
+  background-color: #000000;
+  background-image: url('../AnimeLogo.png');
+  background-repeat: no-repeat;
+  background-position-x:left;
+  background-size: 200px 100px;
+  padding: 0.5rem;
+  padding-right: 20px;
+  font-family: 'Bangers', cursive;
+  text-shadow: 2px 0 0 #fff;
+  letter-spacing: 0.25rem;
 }
+
+body {
+  margin: 0;
+}
+
