@@ -1,6 +1,3 @@
-/* webpackIgnore: true */
-@import url(./basic.css);
-@import /* webpackIgnore: true */ url(./imported.css);
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato&display=swap');
 .headingSection {
   display: flex;
@@ -17,9 +14,50 @@
   font-family: 'Bangers', cursive;
   text-shadow: 2px 0 0 #fff;
   letter-spacing: 0.25rem;
+  border-bottom: 4px solid #D5E60D;
 }
 
 body {
   margin: 0;
+  background-color: #000000
 }
 
+.displaySect {
+  display: grid;
+  padding-top: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.image {
+  border: 1px solid #D5E60D;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000;
+  padding-top: 0.5rem;
+  padding-bottom: 4rem;
+  height: 100%;
+}
+
+.artist {
+  color: #D5E60D;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: #fff;
+}
+/*.theList{
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #D5E60D;
+  width: 100%;
+}*/
+
+.theHeader {
+  display: flex;
+  flex-direction: column;
+}
