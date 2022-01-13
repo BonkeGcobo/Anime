@@ -20,8 +20,17 @@ const displayImages = async() =>{
   let imageArray = await genArray();
   imageArray.forEach(animeImage => {
     const imageSect = `<div class='image'>
-       <img class="theImage" width=80% height=65% src= ${animeImage.url}>
        <h3 class='artist'>${animeImage.artist_name}</h3>
+       <img class="theImage" width=80% height=65% src= ${animeImage.url}>
+       <div class="userInteract">
+          <button class="comments">Comment
+          </button>
+
+          <div class="Likes">
+          <i class="fas fa-heart"></i>;
+          </div>
+          
+       </div>
     </div>`;
 
     dispArea.insertAdjacentHTML('beforeend',imageSect);
