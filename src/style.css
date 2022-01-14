@@ -43,11 +43,6 @@ body {
   margin: 1rem;
 }
 
-.image:hover {
-  width: 80%;
-}
-
-
 .artist {
   color: #D5E60D;
 }
@@ -57,6 +52,10 @@ body {
   align-items: center;
   list-style: none;
   color: #fff;
+  justify-content: space-between;
+  width: 8%;
+  float: right;
+  padding-right: 1rem;
 }
 /*.theList{
   border: 1px solid #fff;
@@ -75,8 +74,12 @@ body {
   border: 5px solid pink;
 }
 
-.fas {
+.Likes {
   color: pink;
+}
+
+.likeText {
+  margin-left: 1rem;
 }
 
 .userInteract {
@@ -85,9 +88,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: pink;
 }
 
 .comments {
   border-radius: 10%;
   border-style: none;
+}
+
+.imageTag {
+  cursor: pointer;
+}
+
+.imageTag :active {
+  background-color: greenyellow;
+  color: #fff;
+}
+
+.gifsTag {
+  cursor: pointer;
 }
